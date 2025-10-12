@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A quote generator using API fetching for fcc training certification. By GitRengeki @ https://github.com/GitRengeki">
+    <title>Quote Generator | Rengeki</title>
+
+
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/25d92bb6a4.js" crossorigin="anonymous"></script>
+    <!-- CDN: Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header id="creator">
+        <a href="https://github.com/GitRengeki" target="_blank">GitRengeki</a>
+    </header>
+
+    <main id="quote-box">
+        <section id="settings">
+            <p id="share">Share your quote:</p>
+            <div id="socials">
+                <a href="https://twitter.com/intent/tweet" target="_blank" class="icons twitter" id="tweet-quote">
+                    <i class="fa-brands fa-twitter"></i></a>
+                
+                <a href="https://reddit.com/submit" target="_blank" class="icons reddit">
+                    <i class="fa-brands fa-reddit-alien"></i></a>
+
+                <a href="#" class="icons copy">
+                    <i class="fa-regular fa-copy"></i></a>
+            </div>
+        </section>
+        <section id="quote-section">
+            <div id="quote-wrapper">
+                <i class="fa-solid fa-quote-left"></i>
+                    <p id="text">I find that the stranger life gets, the more it seems to make sense.”</p>
+                <i class="fa-solid fa-quote-right"></i>
+            </div>
+            
+            <div id="author-wrapper">
+                <span id="dash">—</span><p id="author">Ivern</p>
+            </div>
+        </section>
+        <section id="button-section">
+            <button type="button" id="new-quote">Generate Quote</button>
+        </section>
+    </main>
+
+    <script crossorigin type="text/javascript" src="./main.js"></script>
+</body>
+</html>

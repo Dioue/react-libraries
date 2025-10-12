@@ -1,0 +1,156 @@
+:root{
+    --dark: #232323;
+    --mainBG: #25c99b;
+
+    --openSans: open-sans, sans-serif;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    font-family: var(--openSans);
+    background-color: var(--mainBG);
+}
+
+#creator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 8rem auto 1rem;
+    max-width: 754px;
+
+    backdrop-filter: blur(10px) saturate(200%);
+    -webkit-backdrop-filter: blur(10px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    border-radius: 5rem;
+}
+
+#creator a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #161616;
+    
+}
+
+#quote-box{
+    padding: 1.5rem;
+    margin: auto;
+    max-width: 754px;
+
+    backdrop-filter: blur(10px) saturate(200%);
+    -webkit-backdrop-filter: blur(10px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+#quote-box #settings{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#quote-box #settings #socials{
+    margin-left: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#quote-box #quote-section{
+    margin-bottom: 1rem;
+    padding: 1rem;
+
+    backdrop-filter: blur(10px) saturate(200%);
+    -webkit-backdrop-filter: blur(10px) saturate(200%);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 1);
+}
+
+#quote-box #quote-section #quote-wrapper{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#quote-box #quote-section #quote-wrapper i:first-child{
+    margin-right: 10px;
+}
+
+#quote-box #quote-section #quote-wrapper i:last-child{
+    display: flex;
+    align-items: flex-end;
+    margin-left: 10px;
+}
+
+
+#author-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#author-wrapper #dash{
+    margin-right: 5px;
+}
+
+
+#button-section{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#new-quote{
+    background-color: var(--mainBG);
+    border: none;
+    padding: .80rem 2.5rem;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+.icons{
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 0 .2rem;
+}
+
+.twitter{
+    color: #00ACEE;
+}
+
+.reddit{
+    color: #ff4500;
+}
+
+.copy {
+    color: var(--dark);
+    font-size: 1rem;
+}
+
+
+@media only screen and (max-width: 768px){
+
+    #creator {
+        margin: 1rem;
+    }
+
+    #quote-box{
+        margin: 1rem;
+    }
+}
+
+@media only screen and (max-width: 425px){
+
+    #new-quote{
+        display: inline-block;
+        width: 100%;
+    }
+}

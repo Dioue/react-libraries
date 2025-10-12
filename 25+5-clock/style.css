@@ -1,0 +1,16 @@
+
+
+*, html{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  --body-color: #2C2C2C;
+  --main-color: #121212;
+
+}
+
+body{
+  background-color: var(--main-color);
+  color: white;
+}
